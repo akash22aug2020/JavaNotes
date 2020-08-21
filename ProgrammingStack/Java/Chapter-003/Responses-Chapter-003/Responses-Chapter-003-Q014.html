@@ -1,0 +1,77 @@
+<html>
+	<body>
+		<p>
+			Floating point numbers can be represented in two ways in memory:-<br>
+			<br>
+			<b>1. Single Precision Representation:-</b><br>
+			<br>
+			This is 32 bit representation of the floating point number. The format for single precision representation is:-<br>
+			<br>
+			<b>Sign Bit</b> = 1 bit (sign bit 0 means that the number is +ve where as 1 means that the number is -ve)<br>
+			<b>Exponent Bits</b> = 8 bits (this is used to represent the power of 2 in the binary representation of the floating point number)<br>
+			<b>Mantissa Bits</b> = 23 bits (this is used to represent the part of the floating point number in the binary representation which comes after the decimal point)<br>
+			<br>
+			Example,<br>
+			Lets consider a number, <b>1460.125</b><br>
+			<br>
+			For single precision representation or 32 bit representation, we first convert the number to binary<br>
+			<br>
+			1460.125 (decimal) = 1 011 011 01 00 . 001 (binary)<br>
+			<br>
+			Then we normalize the binary representation as,<br>
+			1 . 011 011 01 00 001 X (2^10)<br>
+			<br>
+			Now, in this normalized representation,<br>
+			<br>
+			Mantissa (the part after decimal) = 011 011 01 00 001<br>
+			Exponent (the power of 2) = 10<br>
+			<br>
+			The format for representing the number in single precision is:-<br>
+			<br>
+			[S](1 bit) [E+127](8 bits) [M](23 bits)<br>
+			<br>
+			The sign bit in this case would be 0 since the number is +ve.<br>
+			E+127 = 10+127 = 137 (decimal) = 1 000 1 001 (binary)<br>
+			M = 011 011 01 00 001 (to complete the remaining bits 0's are added towards the end of the binary representation). Thus, M = 011 011 01 00 001 000 000 000 000 000 0000<br>
+			<br>
+			Final Representation,<br>
+			0 10001001 01101101000010000000000000000000<br>
+			<br>
+			<b>2. Double Precision Representation</b><br>
+			<br>
+			This is 64 bit representation of the floating point number. The format for double precision representation is:-<br>
+			<br>
+			<b>Sign Bit</b> = 1 bit (sign bit 0 means that the number is +ve where as 1 means that the number is -ve)<br>
+			<b>Exponent Bits</b> = 11 bits (this is used to represent the power of 2 in the binary representation of the floating point number)<br>
+			<b>Mantissa Bits</b> = 52 bits (this is used to represent the part of the floating point number in the binary representation which comes after the decimal point)<br>
+			<br>
+			Example,<br>
+			Lets consider a number, <b>1460.125</b><br>
+			<br>
+			For double precision representation or 64 bit representation, we first convert the number to binary<br>
+			<br>
+			1460.125 (decimal) = 1 011 011 01 00 . 001 (binary)<br>
+			<br>
+			Then we normalize the binary representation as,<br>
+			1 . 011 011 01 00 001 X (2^10)<br>
+			<br>
+			Now, in this normalized representation,<br>
+			<br>
+			Mantissa (the part after decimal) = 011 011 01 00 001<br>
+			Exponent (the power of 2) = 10<br>
+			<br>
+			The format for representing the number in double precision is:-<br>
+			<br>
+			[S](1 bit) [E+1023](11 bits) [M](52 bits)<br>
+			<br>
+			The sign bit in this case would be 0 since the number is +ve.<br>
+			E+1023 = 10+1023 = 1033 (decimal) = 1 000 000 1001 (binary)<br>
+			M = 011 011 01 00 001 (to complete the remaining bits 0's are added towards the end of the binary representation). Thus, M = 011 011 01 00 001 000 000 000 000 000 000 000 000 000 000 000 000 000<br>
+			<br>
+			Final Representation,<br>
+			0 10000001001 0110110100001000000000000000000000000000000000000000<br>
+			<br>
+			Ref: <a href="https://www.youtube.com/watch?v=iqMG00tGht0">https://www.youtube.com/watch?v=iqMG00tGht0</a>
+		</p>
+	</body>
+</html>

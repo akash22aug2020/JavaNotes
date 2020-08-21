@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<p>
+			We know that, <br>
+			<br>
+			"When <i>byte</i> and <i>short</i> values are used in an expression, they are automatically promoted to <i>int</i> when the expression is evaluated."<br>
+			<br>
+			Look at the example below:-<br>
+			<br>
+			<img src="./../Images-Chapter-003/chapter-003-q011-A.png"><br>
+			<br>
+			In the above program the RHS expression <i>b1 + b2</i> has return type <i>int</i> since b1 and b2 are first automatically promoted to <i>int</i> and then the expression gets evaluated resulting in the expression having return type int.<br>
+			<br>
+			To solve the above problem, we have two options:-<br>
+			<br>
+			1. Change the data type of <i>b3</i> to <i>int</i> like <i>int b3 = b1 + b2;</i><br>
+			<br>
+			2. Cast the entire RHS expression into <i>byte</i> like <i>byte b3 = (byte)(b1 + b2);</i>
+		</p>
+	</body>
+</html>

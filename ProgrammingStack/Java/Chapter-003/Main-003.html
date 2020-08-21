@@ -1,0 +1,558 @@
+<html>
+	<head>
+		<title>Java - Chapter 03</title>
+		<style type="text/css">
+			#header
+			{
+				color: white;
+				background-color: #415E9C;
+				padding: 7px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="header">
+			<h2>Java: The Complete Reference (11<sup>th</sup> Edition)</h2>
+			<h3>Chapter 3: Datatypes, Variables & Arrays</h3>
+		</div>
+		<hr>
+		<ol>
+			<li>
+				<p>FIB: Java is a _________ language.</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q001.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is meant by the statement, "Java is a strongly typed language"?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q002.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the use of data types?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q003.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>How many types of data are supported by Java?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q004.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>How are the 8 data types in Java classified under different categories?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q005.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What aspect of Java is not object oriented?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q006.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Is there a data type in Java that represents only +ve whole numbers or only -ve whole numbers?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q007.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the size and range of each Integer data type in Java?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q008.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Which is the most rarely used Integer data type in Java?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q009.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Why is it generally not recommended to use byte and short data types when dealing with integer values OR what is the disadvantage of using byte or short data type in java?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q010.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Explain with example, the disadvantage of using byte and short data type?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q011.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					Will the following statement work considering byte values are automatically promoted to int when used in expression?<br>
+					<i>byte b = 10;</i>
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q012.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the size and range of floating point numbers in java?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q013.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are the 2 ways in which floating point numbers can be represented in memory?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q014.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: Java uses _________ to represent characters.</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q015.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the size and range of char data type in Java?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q016.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is something important to know about UNICODE character set?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q017.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are the 2 important character sets that are part of the UNICODE character set? Also mention there range?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q018.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					What are the UNICODE values for:-<br>
+					<br>
+					1. Digits 0 to 9<br>
+					2. Capital A to Capital Z<br>
+					3. Small A to Small Z<br>
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q019.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Give an interesting characteristic of char data type in Java?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q020.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Explain the characteristic of char data type with an example?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q021.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					Will the following statements compile:-<br>
+					1. <i>char ch1 = ch + 32;</i><br>
+					2. <i>char ch1 = ch2 + ch3;</i><br>
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q022.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Will the following statement work:-<br> <i>char ch = 'A';<br>ch++;</i></p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q023.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Give an interesting characteristic of boolean variable?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q024.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are literals?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q025.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					What is the way of representing a:-<br>
+					<br>
+					1. byte literal<br>
+					2. short literal<br>
+					3. int literal<br>
+					4. long literal<br>
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q026.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					How are numbers represented in java in:-<br>
+					<br>
+					1. Binary representation (Base 2)<br>
+					2. Octal representation (Base 8)<br>
+					3. Decimal representation (Base 10)<br>
+					4. Hexadecimal representation (Base 16)<br>
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q027.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Give an important characteristic of integer literal?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q028.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the use of having underscore in integer literals?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q029.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Can underscores be used with binary, octal and hexadecimal representations as well?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q030.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are the 2 ways in which floating point literals can be represented?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q031.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					What is the way of representing a:-<br>
+					<br>
+					1. Float literal<br>
+					2. Double literal
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q032.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: An integer literal by default is ______ literal where as a floating point literal by default is a ________ literal.</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q033.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Can floating point literals be represented in binary, octal and hexadecimal representation?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q034.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Can underscores be used with floating point literals?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q035.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are the rules that should be kept in mind when using underscores with floating point literals?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q036.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are the 2 boolean literals?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q037.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Give one important characteristic of boolean literals in Java?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q038.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Give an important characteristic of Character literals?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q039.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: A character literal is represented within _________</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q040.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>How can we create a character literal for characters which cannot be typed directly via keyboard like pie symbol or which java syntax does not allow to use directly like single quote, double quote, enter key etc? </p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q041.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are escape sequences?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q042.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is meant by CARRIAGE RETURN and FORMFEED?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q043.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Why do we need escape sequences when we can already represent the characters represented by escape sequence (NEWLINE, BACKSPACE etc) using their corresponding octal/decimal/hexadecimal representation?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q044.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>How are string literals represented?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q045.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Give an important characteristic of string literal?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q046.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					In Java, String literals are <br>
+					(i) Array of characters<br>
+					(ii) Objects
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q047.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is meant by dynamic initialization of variables?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q048.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the difference between scope and lifetime of a variable?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q049.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: __________ defines scope.</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q050.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: Java does not have ______ and _______ scope. Instead, it has _________ and _________ scope.</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q051.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>How are the scope and lifetime of variables linked?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q052.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is automatic type conversion?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q053.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is type casting?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q054.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are the 2 conditions for automatic type conversion to take place?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q055.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What data types are considered compatible with each other?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q056.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					Regarding the two conditions for automatic type conversion, which of the following statements are valid:<br>
+					<br>
+					1. The rules/conditions are valid only when variable of one type is assigned to the variable of another type<br>
+					2. The rules/conditions are valid only when literal of one type is assigned to the variable of another type<br>
+					3. The rules/conditions are valid for both the above<br>
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q057.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the exception to the rules for automatic type conversion?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q058.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What happens when a variable is assigned a value outside the range of its data type?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q059.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What happens when the value of a variable goes beyond the range of its data type?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q060.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Is it possible that when variable/literal of one type is assigned to variable of another type, then the value of the source variable/literal gets changed?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q061.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are the rules for type promotion in expressions?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q062.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					What would be the result of the following expressions:-<br>
+					<br>
+					(i) <i>b = b * 2;</i>   //assuming byte b = 50;<br>
+					(ii) <i>s = s / 2;</i>   //assuming short s = 60;<br>
+					(ii) <i>ch = ch + 2;</i>   //assuming char ch = 'c';<br>
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q063.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is an array?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q064.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: An element in an array is accessed by ________</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q065.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the syntax for declaring an array?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q066.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: __________ is a special operator which is used for allocating memory in java.</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q067.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the syntax for allocating memory to arrays?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q068.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the default value of each array element after the array has been allocated memory using the new operator?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q069.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					What is the default value of the following:-<br>
+					i) byte<br>
+					ii) short<br>
+					iii) int<br>
+					iv) long<br>
+					v) float<br>
+					vi) double<br>
+					vii) char<br>
+					viii) boolean<br>
+					ix) string (or any object)
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q070.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Give an important property of default values?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q071.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>WAP demonstrating default values of the following:-<br>
+					i) byte<br>
+					ii) short<br>
+					iii) int<br>
+					iv) long<br>
+					v) float<br>
+					vi) double<br>
+					vii) char<br>
+					viii) boolean<br>
+					ix) string (or any object)
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q072.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: All arrays in Java are ____________</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q073.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: Index of all arrays in Java start at ___________</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q074.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the syntax for combined declaration and allocation of arrays?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q075.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the syntax for initializing an array?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q076.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is the alternate syntax for array declaration and when is this alternate syntax useful?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q077.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What is meant by type inference of variables?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q078.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>How is a local variable declared such that type inference gets involved?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q079.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>FIB: The type of the variable in case of local inference is determined by ___________</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q080.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					Consider the following declaration:-<br>
+					<i>var length = &lt;literal&gt;</i><br>
+					What would be the type of local variable when the following literals are assigned to it:-<br>
+					<br>
+					(i) 100<br>
+					(ii) 100L<br>
+					(iii) 100.23f<br>
+					(iv) 100.23d<br>
+					(v) 'c'<br>
+					(vi) true<br>
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q081.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>WAP to demonstrate the use of automatic type inference of local variable? </p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q082.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>
+					Will the following code:-<br>
+					<img src="./Images-Chapter-003/chapter-003-q083-A.png"><br>
+					<br>
+					(i) Compile successfully<br>
+					(ii) Execute successfully
+				</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q083.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Can 'var' keyword be used to declare the type of array? What is the rule when using 'var' with array declaration?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q084.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Automatic type inference cannot be used with which 3 things?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q085.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>Can 'var' be used as type for references/objects? Explain with example.</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q086.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>What are the 5 restrictions on using 'var' for automatic type inference of local variables?</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q087.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>######</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q088.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>######</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q089.html">Answer</a></p>
+			</li>
+			
+			<li>
+				<p>######</p>
+				<p><a href="./Responses-Chapter-003/Responses-Chapter-003-Q090.html">Answer</a></p>
+			</li>
+		</ol>
+	</body>
+</html>

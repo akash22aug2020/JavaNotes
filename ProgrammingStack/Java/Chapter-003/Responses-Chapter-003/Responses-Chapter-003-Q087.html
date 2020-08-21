@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<p>
+			Following are the restrictions on using 'var' for automatic type inference of local variables:-<br>
+			<br>
+			1. The initializer cannot be null. Example, <i>var i = null;</i> is not allowed.<br>
+			<br>
+			2. An array cannot be initialized when declared using the 'var' keyword. Example, <i>var a = {1, 2, 3};</i> is not allowed.<br>
+			<br>
+			3. 'var' cannot be used as the name of the class, interface, enumeration and annotation.<br>
+			<br>
+			4. 'var' cannot be used to declare the type of the exception caught by the catch statement. Example, <i>catch(var Exception){}</i> is not allowed.<br>
+			<br>
+			5. Lambda expressions or method references cannot be used as initializers.
+		</p>
+	</body>
+</html>
